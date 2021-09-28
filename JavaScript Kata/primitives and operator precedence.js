@@ -2,7 +2,7 @@
 /*                     primitives and operator precedence                     */
 /* -------------------------------------------------------------------------- */
 
-//https://www.codewars.com/kata/572269697297444c570008b9
+// https://www.codewars.com/kata/572269697297444c570008b9
 /* 1 < 2 < 3 === true right?
 but could
 3 < 2 < 1 === true too??
