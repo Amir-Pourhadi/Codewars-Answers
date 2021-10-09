@@ -24,6 +24,6 @@ If either the candidate's minimum salary or the job's maximum salary is not pres
 For a valid match, the candidate's minimum salary must be less than or equal to the job's maximum salary. However, let's also include 10% wiggle room (deducted from the candidate's minimum salary) in case the candidate is a RockStar who enjoys programming on CodeWars in their spare time. The company offering the job may be able to work something out. */
 
 function match(candidate, job) {
-	if (!candidate.minSalary || !job.maxSalary) throw "Error";
-	return candidate.minSalary * 0.9 <= job.maxSalary ? true : false;
+  if (!candidate.minSalary || !job.maxSalary) throw new Error();
+  return candidate.minSalary * 0.9 <= job.maxSalary ? true : false;
 }
