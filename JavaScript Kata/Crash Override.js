@@ -18,7 +18,7 @@ aliasGen('Larry', 'Brentwood') === 'Logic Bomb'
 aliasGen('123abc', 'Petrovic') === 'Your name must start with a letter from A - Z.' */
 
 function aliasGen(fName, lName) {
-	return /[0-9]/.test(fName[0]) || /[0-9]/.test(lName[0])
+	return /\d/.test(fName[0]) || /\d/.test(lName[0])
 		? "Your name must start with a letter from A - Z."
 		: firstName[fName[0].toUpperCase()] + " " + surname[lName[0].toUpperCase()];
 }
