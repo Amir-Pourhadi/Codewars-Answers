@@ -17,7 +17,7 @@ The second value in the first integer array is 0, since the bus is empty in the 
 
 function number(busStops) {
 	let sum = 0;
-	for (busStop of busStops) {
+	for (const busStop of busStops) {
 		sum += busStop[0];
 		sum -= busStop[1];
 	}
