@@ -19,6 +19,6 @@ function digital_root(n) {
 	let result = 0;
 	String(n)
 		.split("")
-		.map((num) => (result += +num));
+		.forEach((num) => (result += +num));
 	return result > 9 ? digital_root(result) : result;
 }
