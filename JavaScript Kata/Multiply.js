@@ -6,5 +6,5 @@
 // A function that outputs multiply of two numbers
 
 function multiply(a, b) {
-	a * b;
+	return a * b;
 }
