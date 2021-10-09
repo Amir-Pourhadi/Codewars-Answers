@@ -10,29 +10,6 @@ sumStrings('1','2') // => '3'
 
 A string representation of an integer will contain no characters besides the ten numerals "0" to "9". */
 
-function sumStrings(a, b) {
-	let [num1, num2] = a.length > b.length ? [a, b] : [b, a];
-	while (num2.length < num1.length) num2 = "0" + num2;
-
-	num1 = num1.split("").reverse().join("");
-	num2 = num2.split("").reverse().join("");
-
-	let ans = "";
-	let carry = 0;
-
-	for (let i = 0; i < num1.length; i++) {
-		let result = parseInt(num1[i]) + parseInt(num2[i]) + carry;
-		carry = 0;
-		if (result >= 10) {
-			result -= 10;
-			carry++;
-		}
-		ans += result;
-	}
-
-	ans += carry && "1";
-
-	while (ans[ans.length - 1] === "0") ans = ans.slice(0, ans.length - 1);
-	ans = ans.split("").reverse().join("");
-	return ans;
-}
+//! Solution is same as Adding Big Numbers.js in current folder!
+//? Adding Big Numbers Kata => https://www.codewars.com/kata/525f4206b73515bffb000b21/train/javascript
+//? Direct link to solution => https://github.com/Amir-Pourhadi/Codewars-Answers/blob/b815f577a8b05474594dad3b605671410bcd6557/JavaScript%20Kata/Adding%20Big%20Numbers.js
