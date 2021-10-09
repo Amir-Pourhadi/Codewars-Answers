@@ -18,7 +18,7 @@ A string of HTML containing an anchor tag for each element of menuItems
 
 function generateMenu(menuItems) {
 	let result = "";
-	for (item of menuItems) {
+	for (const item of menuItems) {
 		result += `<a href="${item.url}">${item.text}</a>`;
 	}
 	return result;
