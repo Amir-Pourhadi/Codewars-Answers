@@ -11,8 +11,11 @@ Example
 For input [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15], you should return [10, -65]. */
 
 function countPositivesSumNegatives(input) {
-	if (!input || input.length < 1) return [];
-	let [countPositives, sumNegatives] = [0, 0];
-	for (element of input) element > 0 ? countPositives++ : (sumNegatives += element);
-	return [countPositives, sumNegatives];
+  if (!input || input.length < 1) return [];
+  let [countPositives, sumNegatives] = [0, 0];
+  for (element of input) {
+    if (element > 0) countPositives++;
+    else sumNegatives += element;
+  }
+  return [countPositives, sumNegatives];
 }
