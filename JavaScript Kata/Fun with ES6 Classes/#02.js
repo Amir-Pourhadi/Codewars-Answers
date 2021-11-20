@@ -65,7 +65,7 @@ class Cat extends Animal {
   }
 
   introduce() {
-    return `Hello, my name is ${this.name} and I am ${this.age} years old.  Meow meow!`;
+    return `${super.introduce()}  Meow meow!`;
   }
 }
 
