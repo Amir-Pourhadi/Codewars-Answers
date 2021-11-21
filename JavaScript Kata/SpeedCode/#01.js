@@ -43,6 +43,7 @@ const person = {
   },
 
   set fullName(value) {
-    [this.firstName, this.lastName] = value.split(" ");
+    const [firstName, lastName] = value.split(" ");
+    Object.assign(this, { firstName, lastName });
   },
 };
