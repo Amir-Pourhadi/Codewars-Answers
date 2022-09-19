@@ -26,7 +26,9 @@ And a tower with 6 floors looks like this:
 function towerBuilder(nFloors) {
   const tower = [];
   for (let i = nFloors; i > 0; i--)
-    tower.push(" ".repeat(nFloors - i) + "*".repeat(2 * i - 1) + " ".repeat(nFloors - i));
+    tower.unshift(" ".repeat(nFloors - i) + "*".repeat(2 * i - 1) + " ".repeat(nFloors - i));
 
   return tower;
 }
+
+console.log(towerBuilder(3));
