@@ -30,5 +30,3 @@ function towerBuilder(nFloors) {
 
   return tower;
 }
-
-console.log(towerBuilder(3));
