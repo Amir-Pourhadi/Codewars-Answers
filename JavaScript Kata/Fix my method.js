@@ -9,11 +9,10 @@ Can you fix the syntax so myFunction will be working again? Please check things 
 IMPORTANT: Returning just "string" is insufficient. We are required to use Object Literal Notation. */
 
 function myFunction() {
-	var MyObject = {
+	return {
 		objProperty: "string",
 		objMethod() {
 			return this.objProperty;
 		},
 	};
-	return MyObject;
 }

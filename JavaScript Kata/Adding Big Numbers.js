@@ -2,7 +2,7 @@
 /*                             Adding Big Numbers                             */
 /* -------------------------------------------------------------------------- */
 
-// https://www.codewars.com/kata/525f4206b73515bffb000b21/train/javascript
+// https://www.codewars.com/kata/525f4206b73515bffb000b21
 /* Write a function that returns the sum of two numbers.
 The input numbers are strings and the function must return a string.
 
@@ -38,7 +38,7 @@ function add(a, b) {
 
 	ans += carry && "1";
 
-	while (ans[ans.length - 1] === "0") ans = ans.slice(0, ans.length - 1);
+	while (ans.endsWith("0")) ans = ans.slice(0, ans.length - 1);
 	ans = ans.split("").reverse().join("");
 	return ans;
 }

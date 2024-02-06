@@ -13,4 +13,4 @@ It can be achieved in 29 characters if you want to make some truly horrendous co
 If you use let or const or other ES6 features, your code will get longer due to the transformation by babel.
  */
 
-makeUnique = a => [...new Set(a)];
+const makeUnique = a => [...new Set(a)];
